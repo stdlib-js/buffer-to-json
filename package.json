@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/buffer-to-json",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Return a JSON representation of a Buffer.",
   "license": "Apache-2.0",
   "author": {

@@ -120,6 +120,21 @@ console.log( toJSON( buf ) );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/array/to-json`][@stdlib/array/to-json]: return a JSON representation of a typed array.
+-   [`@stdlib/buffer/reviver`][@stdlib/buffer/reviver]: revive a JSON-serialized Buffer.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -181,7 +196,13 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
 
+<!-- <related-links> -->
+
+[@stdlib/array/to-json]: https://github.com/stdlib-js/array-to-json
+
 [@stdlib/buffer/reviver]: https://github.com/stdlib-js/buffer-reviver
+
+<!-- </related-links> -->
 
 </section>
 

@@ -20,7 +20,7 @@ limitations under the License.
 
 # toJSON
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Return a [JSON][json] representation of a [Buffer][@stdlib/buffer/ctor].
 
@@ -128,8 +128,8 @@ console.log( toJSON( buf ) );
 
 ## See Also
 
--   [`@stdlib/array/to-json`][@stdlib/array/to-json]: return a JSON representation of a typed array.
--   [`@stdlib/buffer/reviver`][@stdlib/buffer/reviver]: revive a JSON-serialized Buffer.
+-   <span class="package-name">[`@stdlib/array/to-json`][@stdlib/array/to-json]</span><span class="delimiter">: </span><span class="description">return a JSON representation of a typed array.</span>
+-   <span class="package-name">[`@stdlib/buffer/reviver`][@stdlib/buffer/reviver]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized Buffer.</span>
 
 </section>
 
@@ -180,8 +180,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/buffer-to-json/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/buffer-to-json?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/buffer-to-json.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/buffer-to-json/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/

@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# toJSON
+# buffer2json
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
@@ -34,26 +34,42 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/buffer-to-json
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import toJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@esm/index.mjs';
+var buffer2json = require( '@stdlib/buffer-to-json' );
 ```
 
-#### toJSON( buffer )
+#### buffer2json( buffer )
 
 Returns a [JSON][json] representation of a [`Buffer`][@stdlib/buffer/ctor].
 
 ```javascript
-import array2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-array@esm/index.mjs';
+var array2buffer = require( '@stdlib/buffer-from-array' );
 
 var buf = array2buffer( [ 1, 2 ] );
 
-var json = toJSON( buf );
+var json = buffer2json( buf );
 /* returns
     {
         'type': 'Buffer',
@@ -84,29 +100,18 @@ For guidance on reviving a JSON-serialized [`Buffer`][@stdlib/buffer/ctor], see 
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
+```javascript
+var allocUnsafe = require( '@stdlib/buffer-alloc-unsafe' );
+var randi = require( '@stdlib/random-base-discrete-uniform' );
+var buffer2json = require( '@stdlib/buffer-to-json' );
 
-import allocUnsafe from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-alloc-unsafe@esm/index.mjs';
-import randint from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import toJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@esm/index.mjs';
-
-var buf;
+var buf = allocUnsafe( 100 );
 var i;
-
-buf = allocUnsafe( 100 );
 for ( i = 0; i < buf.length; i++ ) {
-    buf[ i ] = randint( 0, 255 );
+    buf[ i ] = randi( 0, 255 );
 }
 
-console.log( toJSON( buf ) );
-
-</script>
-</body>
-</html>
+console.log( buffer2json( buf ) );
 ```
 
 </section>
@@ -145,7 +150,7 @@ console.log( toJSON( buf ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -207,13 +212,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [json]: http://www.json.org/
 
-[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor/tree/esm
+[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
 
 <!-- <related-links> -->
 
-[@stdlib/array/to-json]: https://github.com/stdlib-js/array-to-json/tree/esm
+[@stdlib/array/to-json]: https://github.com/stdlib-js/array-to-json
 
-[@stdlib/buffer/reviver]: https://github.com/stdlib-js/buffer-reviver/tree/esm
+[@stdlib/buffer/reviver]: https://github.com/stdlib-js/buffer-reviver
 
 <!-- </related-links> -->
 

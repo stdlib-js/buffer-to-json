@@ -41,12 +41,12 @@
     "@stdlib/string-format": "^0.1.0"
   },
   "devDependencies": {
-    "@stdlib/assert-is-plain-object": "^0.0.7",
+    "@stdlib/assert-is-plain-object": "^0.1.0",
     "@stdlib/bench": "^0.1.0",
-    "@stdlib/buffer-alloc-unsafe": "^0.0.7",
-    "@stdlib/buffer-from-array": "^0.0.7",
-    "@stdlib/math-base-special-pow": "^0.0.7",
-    "@stdlib/random-base-discrete-uniform": "^0.0.6",
+    "@stdlib/buffer-alloc-unsafe": "^0.1.0",
+    "@stdlib/buffer-from-array": "^0.1.0",
+    "@stdlib/math-base-special-pow": "^0.1.0",
+    "@stdlib/random-base-discrete-uniform": "^0.1.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"

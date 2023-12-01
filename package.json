@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@stdlib/assert-is-plain-object": "^0.1.1",
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.1",
     "@stdlib/buffer-alloc-unsafe": "^0.1.0",
     "@stdlib/buffer-from-array": "^0.1.0",
     "@stdlib/math-base-special-pow": "^0.1.0",

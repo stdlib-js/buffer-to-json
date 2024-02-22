@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@deno/mod.js';
+import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@v0.2.1-deno/mod.js';
 ```
 
 #### buffer2json( buffer )
@@ -98,7 +98,7 @@ For guidance on reviving a JSON-serialized [`Buffer`][@stdlib/buffer/ctor], see 
 ```javascript
 import allocUnsafe from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-alloc-unsafe@deno/mod.js';
 import randi from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
-import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@deno/mod.js';
+import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@v0.2.1-deno/mod.js';
 
 var buf = allocUnsafe( 100 );
 var i;

@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/buffer-to-json/tags). For example,
+
+```javascript
 import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@v0.2.2-esm/index.mjs';
 ```
 
@@ -103,7 +108,7 @@ For guidance on reviving a JSON-serialized [`Buffer`][@stdlib/buffer/ctor], see 
 
 import allocUnsafe from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-alloc-unsafe@esm/index.mjs';
 import randi from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@v0.2.2-esm/index.mjs';
+import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@esm/index.mjs';
 
 var buf = allocUnsafe( 100 );
 var i;

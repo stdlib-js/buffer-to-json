@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/buffer-to-json/tags). For example,
+
+```javascript
 import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@v0.2.2-deno/mod.js';
 ```
 
@@ -98,7 +103,7 @@ For guidance on reviving a JSON-serialized [`Buffer`][@stdlib/buffer/ctor], see 
 ```javascript
 import allocUnsafe from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-alloc-unsafe@deno/mod.js';
 import randi from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
-import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@v0.2.2-deno/mod.js';
+import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@deno/mod.js';
 
 var buf = allocUnsafe( 100 );
 var i;

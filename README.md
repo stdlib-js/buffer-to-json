@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/buffer-to-json
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@deno/mod.js';
+var buffer2json = require( '@stdlib/buffer-to-json' );
 ```
 
 #### buffer2json( buffer )
@@ -60,7 +78,7 @@ import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@de
 Returns a [JSON][json] representation of a [`Buffer`][@stdlib/buffer/ctor].
 
 ```javascript
-import array2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-array@deno/mod.js';
+var array2buffer = require( '@stdlib/buffer-from-array' );
 
 var buf = array2buffer( [ 1, 2 ] );
 
@@ -96,9 +114,9 @@ For guidance on reviving a JSON-serialized [`Buffer`][@stdlib/buffer/ctor], see 
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import allocUnsafe from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-alloc-unsafe@deno/mod.js';
-import randi from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
-import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@deno/mod.js';
+var allocUnsafe = require( '@stdlib/buffer-alloc-unsafe' );
+var randi = require( '@stdlib/random-base-discrete-uniform' );
+var buffer2json = require( '@stdlib/buffer-to-json' );
 
 var buf = allocUnsafe( 100 );
 var i;
@@ -145,7 +163,7 @@ console.log( buffer2json( buf ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -162,7 +180,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -188,8 +206,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -210,13 +228,13 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [json]: http://www.json.org/
 
-[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor/tree/deno
+[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
 
 <!-- <related-links> -->
 
-[@stdlib/array/to-json]: https://github.com/stdlib-js/array-to-json/tree/deno
+[@stdlib/array/to-json]: https://github.com/stdlib-js/array-to-json
 
-[@stdlib/buffer/reviver]: https://github.com/stdlib-js/buffer-reviver/tree/deno
+[@stdlib/buffer/reviver]: https://github.com/stdlib-js/buffer-reviver
 
 <!-- </related-links> -->
 

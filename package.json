@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/buffer-to-json",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Return a JSON representation of a Buffer.",
   "license": "Apache-2.0",
   "author": {
@@ -37,9 +37,9 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-buffer": "^0.2.2",
+    "@stdlib/assert-is-buffer": "^0.2.3",
     "@stdlib/string-format": "^0.2.3",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/assert-is-plain-object": "^0.2.2",
